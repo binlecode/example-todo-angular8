@@ -7,10 +7,20 @@
                     <div class="form-group">
                         <label class="col-md-4">Title </label>
                         <input type="text" class="form-control" formControlName="title" />
+                        <!-- this is form-control level error message list -->
+                        <ul class="text-danger list-unstyled"
+                            *ngIf="todoForm.controls['title'].invalid">
+                            <li *ngFor="let error of getValidationMessages(todoForm.controls['title'], 'title')">
+                                {{error}}
+                            </li>
+                        </ul>
                     </div>
                     <div class="form-group">
                         <button type="submit" class="btn btn-primary col-md-4"
-                            [disabled]="todoForm.invalid">Add</button>
+                            [disabled]="todoForm.invalid"
+                            [class.btn-secondary]="todoForm.invalid">  <!-- make button gray when value is invalid -->
+                            Add
+                        </button>
                         <a [routerLink]="['/']">
                             <button type="submit" class="btn btn-primary col-md-4 ml-1">Back</button>
                         </a>

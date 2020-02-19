@@ -1,5 +1,4 @@
 
-
 # TestNg8Todo
 
 
@@ -17,7 +16,6 @@ npm install @angular/cli@8.3
 ```
 
 If ng cli is installed locally, then ng command should be run from `node_modules/.bin/ng <cmd>`
-
 
 Installing bootstrap 4:
 ```bash
@@ -48,13 +46,9 @@ This can be fixed it by running the following:
 sudo xcode-select --reset
 ```
 
-
-
-
-
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `node_modules/.bin/ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
