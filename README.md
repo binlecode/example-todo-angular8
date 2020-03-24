@@ -2,8 +2,6 @@
 # TestNg8Todo
 
 
-
-
 ## note:
 
 System setup:
@@ -19,7 +17,7 @@ If ng cli is installed locally, then ng command should be run from `node_modules
 
 Installing bootstrap 4:
 ```bash
-npm install bootstrap@4.1 --save
+npm install bootstrap@4.4.1 --save
 ```
 
 if getting this error:

@@ -1,7 +1,7 @@
 export class Todo {
     id: number;
     title = '';
-    complate = false;
+    completed = false;
 
     constructor(values: Object = {}) {
         Object.assign(this, values);
